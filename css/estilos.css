@@ -1,0 +1,36 @@
+.contenedorConsola {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(201, 44, 154);
+    /* border: 1px solid rgb(197, 128, 176); */
+    /* border-radius: 60% 25% 60% 25%; */
+    width: 50%;
+    height: 100%; 
+    }
+    .contenedorPantalla {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    }
+    .mandos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(201, 44, 154);
+    width: 40%;
+    height: 70%;
+        /* border: 1px solid rgb(197, 128, 176); */
+        /* border-radius: 60% 25% 60% 25%; */
+    }   
+    
+    /* .botonOn { 
+    
+    }
+    .mandosIzdaFlechas{
+    
+    }
+    .mandosDchaCirculos {
+    
+    }*/
