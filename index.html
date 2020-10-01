@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ComeCocos</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <!-- Tipografia de fuente de google -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
@@ -16,9 +17,16 @@
             <div id="texto">COMECOCOS</div>
             <!-- Contenedor pantalla con la imagen -->
             <div class="contenedorPantalla">
-                <!-- Imagen juego comecocos -->
-                <img src="img/comecocos.jpg" id="comecocos">
+                <!-- Slider 2 imagenes juego comecocos -->
+                <div class="slider">
+                     <img src="img/comecocos.jpg" class="comecocos" alt="imagen comecocos"> 
+                    <img src="img/pacman.jpg" class="comecocos" id="pacman" alt="imagen juego pacman"> 
+                </div>
             </div>
+        <div class="on_off">
+            <button class="encender" id="apagar" onclick="apagarPantalla()"></button>
+        </div>    
+        
             <!-- Contenedor mandos general -->
             <div class="mandos">
                 <div class="botones1">
@@ -31,6 +39,7 @@
             </div>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,6 @@
+body {
+    background-image: linear-gradient(rgb(116, 111, 111), rgb(199, 194, 194));
+}
 /* ESTILOS PARA TODA LA CONSOLA COMECOCOS */
 
 /* Estilos contenedor general que engloba todo */
@@ -11,12 +14,13 @@
 /* Estilos contenedor carcasa entera de la consola */
 
 .contenedorConsola{
-    width: 30em;
-    height: 40em;
-    background: -webkit-linear-gradient(rgb(133, 58, 109), rgb(204, 179, 183));
-    background-color: rgb(133, 58, 109);
-    box-shadow: 10px 10px 5px 5px rgb(141, 85, 123);
-    border-radius: 25% 10% 25% 10%;
+    width: 25em;
+    height: 35em;
+    background: -webkit-linear-gradient(rgb(136, 49, 108), rgb(138, 69, 151));
+    background-color: rgb(133, 123, 130);
+    border: 1 px solid rgb(107, 76, 97);
+    box-shadow: 10px 10px 5px 5px rgb(65, 41, 57);
+    border-radius: 20% 10% 20% 10%;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -29,6 +33,7 @@
     padding: 5px;
     font-family: 'Press Start 2P', cursive;
     font-size: 1.5em;
+    color: rgb(39, 38, 38);
 }
 
 /* Estilos parte de la pantalla con imagen */
@@ -37,19 +42,60 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    background: -webkit-linear-gradient(rgb(26, 24, 25),rgb(104, 95, 99));
+    background: -webkit-linear-gradient(rgb(26, 24, 25),rgb(75, 68, 71));
     background-color: rgb(26, 24, 25);
     border-radius: 10% 10% 10% 10%;
-    width: 60%;
+    width: 70%;
     height: 40%;
     }
 
-/* Estilos imagen comecocos  */
+.slider {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 70%;
+    height: 40%;    
+    }
+/* Estilos primera imagen comecocos */
+ .comecocos {
+    border-radius: 7% 7% 7% 7%;   
+    }
 
-#comecocos {
-    border-radius: 10% 10% 10% 10%;   
+    /* Estilos para el cambio imagen cuando pasas el raton */
+
+.slider img {
+    position:absolute;
+    transition: opacity 1.5s ease-in-out;
 }
 
+.slider img#pacman:hover {
+    opacity: 0;
+    border-radius: 7% 7% 7% 7%;   
+}
+
+/* -webkit-transition */
+
+/* Estilos para boton ON/OFF */
+.on_off {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 8%;
+    height: 6%;    
+    background-color: rgb(138, 69, 151);
+    }
+    div.on_off:hover {
+        border: 2 px solid rgb(218, 37, 202);
+        border-radius: 50%;
+      }
+    .encender {
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        background-color: rgb(19, 18, 19);
+    }
 /* Estilos para los mandos de la consola */
 
 .mandos {
@@ -58,8 +104,6 @@
     background-color: rgb(19, 18, 19);
     display:flex;
     flex-direction: row;
-        /* border: 1px solid rgb(197, 128, 176); */
-        /* border-radius: 60% 25% 60% 25%; */
     }   
 
 /* Estilos  para los botones de la consola */
