@@ -1,5 +1,6 @@
 body {
     background-image: linear-gradient(rgb(116, 111, 111), rgb(199, 194, 194));
+    color: rgb(27, 28, 29);
 }
 /* ESTILOS PARA TODA LA CONSOLA COMECOCOS */
 
@@ -16,8 +17,7 @@ body {
 .contenedorConsola{
     width: 25em;
     height: 35em;
-    background: -webkit-linear-gradient(rgb(136, 49, 108), rgb(138, 69, 151));
-    background-color: rgb(133, 123, 130);
+    background-color: rgb(136, 49, 108);
     border: 1 px solid rgb(107, 76, 97);
     box-shadow: 10px 10px 5px 5px rgb(65, 41, 57);
     border-radius: 20% 10% 20% 10%;
@@ -27,16 +27,17 @@ body {
     align-items: center;    
     }
 
-/* Estilo para texto comecocos */
+/* Estilo para texto comecocos de Google fonts*/
 
 #texto {
-    padding: 5px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
     font-family: 'Press Start 2P', cursive;
     font-size: 1.5em;
     color: rgb(39, 38, 38);
 }
 
-/* Estilos parte de la pantalla con imagen */
+/* Estilos parte superior de la pantalla con imagen */
 
 .contenedorPantalla {
     display:flex;
@@ -57,16 +58,18 @@ body {
     width: 70%;
     height: 40%;    
     }
+
 /* Estilos primera imagen comecocos */
+
  .comecocos {
     border-radius: 7% 7% 7% 7%;   
     }
 
-    /* Estilos para el cambio imagen cuando pasas el raton */
+/* Estilos para el cambio imagen cuando pasas el raton */
 
 .slider img {
     position:absolute;
-    transition: opacity 1.5s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 .slider img#pacman:hover {
@@ -74,9 +77,8 @@ body {
     border-radius: 7% 7% 7% 7%;   
 }
 
-/* -webkit-transition */
+/* Estilos para boton ON/OFF (capa y botón) */
 
-/* Estilos para boton ON/OFF */
 .on_off {
     display:flex;
     justify-content: center;
@@ -84,67 +86,88 @@ body {
     position: relative;
     width: 8%;
     height: 6%;    
-    background-color: rgb(138, 69, 151);
+    background-color:  rgb(136, 49, 108);
     }
-    div.on_off:hover {
-        border: 2 px solid rgb(218, 37, 202);
-        border-radius: 50%;
-      }
-    .encender {
-        width: 2em;
-        height: 2em;
-        border-radius: 50%;
-        background-color: rgb(19, 18, 19);
+div.on_off:hover {
+    border: 2 px solid rgb(240, 231, 239);
+    border-radius: 50%;
     }
+.encender {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: rgb(19, 18, 19);
+    cursor: pointer;
+    }
+
 /* Estilos para los mandos de la consola */
 
 .mandos {
-    height: 40%;
-    width: 80%;    
-    background-color: rgb(19, 18, 19);
+    height: 30%;
+    width: 85%;    
+    background-color: rgb(19, 18, 19); 
     display:flex;
     flex-direction: row;
     }   
 
 /* Estilos  para los botones de la consola */
 
-.botones1 { 
+.botones { 
+    display: flex;
     height: 100%;
     width: 33%;
-    background-color: brown;
-    display: flex;
     flex-direction: column;
-    }
-
-.botones2 {
-    height: 100%;
-    width: 34%;
-    background-color: darkblue;
-    }
-
-.botones3 {
-        height: 100%;
-        width: 100%;
-        background-color: darkred;
-    }
-/* Estilos cruceta */
-
-.cruceta1{
-    height: 33%;
+    background-color: rgb(136, 49, 108);
+}
+.row1, .row2, .row3 {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 31%;
     width: 100%;
-    background-color: darkolivegreen;
+    background-color: rgb(136, 49, 108);
     }
-
-.cruceta2{
-    height: 34%;
+.botonX {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(rgb(24, 23, 24), rgb(203, 190, 206));
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    }
+    
+.botones4 {
+    display:grid;
+    grid-template-rows: 33% 33% 33%; 
+    justify-items: center;
+    align-items: center;
     width: 100%;
-    background-color: darkolivegreen;
+    height:100%;
     }
 
+.cruceta1 {
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(6, 6, 29);
+    width: 33%;
+}
+.cruceta2 {
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(39, 39, 75);
+    width: 33%;
+}
 .cruceta3{
-    height: 33%;
-    width: 100%;
-    background-color: darkolivegreen;
-    }
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(132, 132, 214);
+    width: 33%;
+}
 
 
