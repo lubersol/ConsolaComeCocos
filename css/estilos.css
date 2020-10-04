@@ -7,8 +7,14 @@ body {
 
 .contenedorGlobal {
     display: flex;
-    justify-content: center;
     align-items: center;
+    width: 26em;
+    height: 36em;
+    margin-left: 33%;
+    background: rgb(119, 35, 92);
+    border: 1px solid  rgb(119, 35, 92);
+    border-radius: 20% 10% 20% 10%;
+    box-shadow: 5px 10px 10px 10px rgb(65, 41, 57);
     }
 
 /* Estilos contenedor carcasa entera de la consola */
@@ -17,8 +23,7 @@ body {
     width: 25em;
     height: 35em;
     background-color: rgb(136, 49, 108);
-    border: 1 px solid rgb(107, 76, 97);
-    box-shadow: 5px 10px 10px 10px rgb(65, 41, 57);
+    border: 1px solid rgb(119, 35, 92);
     border-radius: 20% 10% 20% 10%;
     display:flex;
     flex-direction: column;
@@ -34,7 +39,7 @@ body {
     font-family: 'Press Start 2P', cursive;
     font-size: 1.5em;
     color: rgb(39, 38, 38);
-}
+    }
 
 /* Estilos parte superior de la pantalla con imagen */
 
@@ -48,7 +53,6 @@ body {
     width: 70%;
     height: 40%;
     }
-
 .slider {
     display:flex;
     justify-content: center;
@@ -60,7 +64,7 @@ body {
 
 /* Estilos primera imagen comecocos */
 
- .comecocos {
+.comecocos {
     border-radius: 7% 7% 7% 7%;   
     }
 
@@ -69,12 +73,11 @@ body {
 .slider img {
     position:absolute;
     transition: opacity 1s ease-in-out;
-}
-
+    }
 .slider img#pacman:hover {
     opacity: 0;
     border-radius: 7% 7% 7% 7%;   
-}
+    }
 
 /* Estilos para boton ON/OFF (capa y botón) */
 
@@ -116,7 +119,7 @@ div.on_off:hover {
     width: 33%;
     flex-direction: column;
     background-color: rgb(136, 49, 108);
-}
+    }
 .row1, .row2, .row3 {
     display:flex;
     justify-content: center;
@@ -133,47 +136,87 @@ div.on_off:hover {
     background: -webkit-linear-gradient(rgb(24, 23, 24), rgb(203, 190, 206));
     border: 1px solid black;
     border-radius: 50%;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     color: rgb(27, 28, 29);
     }
+
 /* Estilos para cruceta de la consola (parte derecha) */
 
 .cruceta {
     display: flex;
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
+    margin-left: 1.3em;
+    margin-top: 1em;
     flex-direction: column;
     background-color: rgb(136, 49, 108);
     }
-
 .cruceta1, .cruceta2, .cruceta3 {
     display:flex;
     justify-content: center;
-    align-content: center;
-    align-items: center;
     height: 33%;
     width: 100%;
     background-color: rgb(136, 49, 108);
-}
+    }
+.cruceta2{
+    margin:0px;
+    }
+.marco {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+    height: 100%;
+    background-color: rgb(66, 58, 58);
+    }
+.marcoCentral {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    background-color: rgb(66, 58, 58);
+    flex-direction: row; 
+    }
 .arriba, .abajo {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
-    border: 1px solid black;
-    width: 25%;
+    background: rgb(10, 10, 10);
+    width: 80%;
     height: 100%;
     }
-    .centro {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: black;
-        border: 1px solid black;
-        width: 80%;
-        height: 80%;
-        } 
+.flechaAbajo, .flechaArriba {
+    background: -webkit-linear-gradient(rgb(24, 23, 24), rgb(147, 135, 150));
+    background-color: rgba(41, 39, 39, 0.884);
+    width: 80%;
+    height: 70%;
+    }
+.flechaArriba {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+.flechaAbajo{
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    }
+.centro {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(10, 10, 10);
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    } 
+.flechaIzda, .flechaDcha {
+    width: 25%;
+    height: 70%;
+    background: -webkit-linear-gradient(rgb(24, 23, 24), rgb(147, 135, 150));
+    background-color: rgba(41, 39, 39, 0.884);
+    }
+.flechaIzda {
+    clip-path: polygon(100% 100%, 0 50%, 100% 0);
+    }
+.flechaDcha {
+    clip-path: polygon(100% 50%, 0 100%, 0 0);
+    }
     
 
 
